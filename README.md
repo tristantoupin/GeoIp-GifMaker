@@ -1,7 +1,9 @@
 # GeoIp - Gif Maker
 
-This project is a mashup of these 2 projects:
+This project is a mashup of these 2 projects: 
+
 	- https://github.com/pierrrrrrre/PyGeoIpMap
+	
 	- https://github.com/tristantoupin/Ecse414-Project
 
 Special thanks to all contributors of the project PyGeoIpMap!
