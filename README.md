@@ -1,6 +1,12 @@
 # GeoIp - Gif Maker
 
-Create a gif of how a packet is trasmitted from source (your laptop) to any destination. Using my other project ECSE414-Project (see for more info)
+This project is a mashup of these 2 projects:
+	- https://github.com/pierrrrrrre/PyGeoIpMap
+	- https://github.com/tristantoupin/Ecse414-Project
+
+Special thanks to all contributors of the project PyGeoIpMap!
+
+Create a gif of how a packet is trasmitted from source (your laptop) to any destination. Using my other project ECSE414-Project (see for more info) you can easily study how packets circulate in a network.
 
 
 ![screenshot.jpg](https://github.com/tristantoupin/GeoIp-GifMaker/blob/master/output.gif)
@@ -19,7 +25,7 @@ Create a gif with the following command:
 sh makegif.sh
 ```
 
-The list of IP address must be saved to a text file with each IP
+The list of IP address must be saved to a text file named ip.txt with each IP
 address separated by a newline as shown below:
 
 ```
@@ -39,18 +45,18 @@ or run a trace route (to Google's servers) with the following command:
 
 mac
 ```bash
-traceroute 8.8.8.8
+traceroute 8.8.8.8 >> ip.txt
 
 or
 
-traceroute google.com
+traceroute google.com >> ip.txt
 ```
 
 windows
 ```bash
-tracert 8.8.8.8
+tracert 8.8.8.8 >> ip.txt
 
 or 
 
-tracert google.com
+tracert google.com >> ip.txt
 ```
